@@ -2,7 +2,7 @@ const assert = require('assert')
 const dynamoDBProvider = require('../provider/aws/dynamoDB')
 const tableToAdd = require('./data/tableToAdd')
 
-describe('Create Table', async () => {
+describe('Create Image Table', async () => {
   let dynamoDB = null
 
   it('should get a dynamodb instance', async () => {

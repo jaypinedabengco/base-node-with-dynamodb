@@ -1,5 +1,5 @@
 module.exports = {
-    TableName: 'answered',
+    TableName: 'answer',
     KeySchema: [
       {
         AttributeName: 'ID',

@@ -53,6 +53,11 @@ describe('Create Tutorial Tables', async () => {
 
 })
 
+/**
+ * 
+ * @param {*} dynamodb 
+ * @param {*} tableName 
+ */
 const _tableAlreadyExist = async (dynamodb, tableName) => {
   // check first if exists
   return await dynamodb

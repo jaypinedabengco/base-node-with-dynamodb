@@ -4,7 +4,7 @@ const bluebird = require('bluebird')
 
 // configure for local use
 AWS.config.update({
-  region: 'eu-west-2',
+  region: 'ap-southeast-1',
   endpoint: 'http://localhost:8000'
 })
 

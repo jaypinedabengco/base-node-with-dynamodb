@@ -5,6 +5,7 @@
   "scripts": {
     "start": "./node_modules/.bin/nodemon ./bin/www",
     "start_dynamodb_locally": "sh ./start_dynamo_local.sh",
+    "start_dynamodb_local_gui": "sh ./start_dynamodb_local_gui.sh",
     "test": "mocha"
   },
   "dependencies": {

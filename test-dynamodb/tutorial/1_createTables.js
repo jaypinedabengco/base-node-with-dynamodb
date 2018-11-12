@@ -17,7 +17,7 @@ describe('Create Tutorial Tables', async () => {
     assert(!!dynamodb)
   })
 
-  it(`should create 'Image' table`, async () => {
+  it(`should create '${ImageTable.TableName}' table if not exist`, async () => {
     // check first if exists
     const isAlreadyExists = await _tableAlreadyExist(dynamodb, ImageTable.TableName)
 
@@ -28,7 +28,7 @@ describe('Create Tutorial Tables', async () => {
     }
   })
 
-  it(`should create 'ImageTag' table`, async () => {
+  it(`should create '${ImageTagTable.TableName}' table if not exist`, async () => {
     // check first if exists
     const isAlreadyExists = await _tableAlreadyExist(dynamodb, ImageTagTable.TableName)
 
@@ -40,7 +40,7 @@ describe('Create Tutorial Tables', async () => {
   })
 
 
-  it(`should create '${TagTable.TableName}' table`, async () => {
+  it(`should create '${TagTable.TableName}' table if not exist`, async () => {
     // check first if exists
     const isAlreadyExists = await _tableAlreadyExist(dynamodb, TagTable.TableName)
 

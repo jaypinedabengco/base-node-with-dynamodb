@@ -38,7 +38,7 @@ describe('Insert Multiple Images', () => {
     assert.strictEqual(result.Item.Information, putParams.Item.Information)
   })
 
-  it('Batch save 24 images then check if exist on db', async () => {
+  it('Batch save 25 images then check if exist on db', async () => {
     const tableName = ImageTable.TableName
     const putParams = {
       RequestItems: {
@@ -46,7 +46,7 @@ describe('Insert Multiple Images', () => {
       }
     }
     // create 25 names
-    for (i = 0; i < 24; i++) {
+    for (i = 0; i < 25; i++) {
       let item = {
         PutRequest: {
           Item: {
